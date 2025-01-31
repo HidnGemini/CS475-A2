@@ -111,6 +111,7 @@ void heapify(Employee *A, int index, int length) {
 
 /**
  * Swaps the locations of two Employees
+ *
  * @param *e1 An Employee
  * @param *e2 Another Employee to swap with
  */
@@ -122,13 +123,13 @@ void swap(Employee *e1, Employee *e2) {
 
 /**
  * Outputs an array of Employees
+ *
  * @param	*A	Pointer to the list of employees
  * @param	length	Size of the list
  */
 void printList(Employee *A, int length) {
-	printf("[{id=%s sal=%d}, ", (*(A)).name, (*(A)).salary);
-    for (int i = 1; i<length-1; i++) {
-        printf("{id=%s sal=%d}, ", (*(A+i)).name, (*(A+i)).salary);
+    for (int i = 0; i<length; i++) {
+        printf("{id=%s sal=%d} ", (*(A+i)).name, (*(A+i)).salary);
     }
-    printf("{id=%s sal=%d}]\n", (*(A+length-1)).name, (*(A+length-1)).salary);
+	printf("\n");
 }

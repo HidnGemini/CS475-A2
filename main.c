@@ -9,6 +9,7 @@ int main(int argc, char *argv[])
 	Employee EmployeeArray[MAX_EMPLOYEES];
 
 	int employeeCounter = 0;
+	// ask user for MAX_EMPLOYEES employees
 	while (employeeCounter < MAX_EMPLOYEES) {
 		printf("Name: ");
 		scanf("%s", EmployeeArray[employeeCounter].name);
@@ -22,6 +23,5 @@ int main(int argc, char *argv[])
 	heapSort(EmployeeArray, MAX_EMPLOYEES);
 	printf("After HeapSort: ");
 	printList(EmployeeArray, MAX_EMPLOYEES);
-	
 	return 0;
 }
