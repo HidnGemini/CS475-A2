@@ -1,8 +1,8 @@
 /*
  * heapsort.c
  *
- *  Created on: Jul 1, 2013
- *      Author:
+ *  Created on: Jan 31, 2025
+ *      Author: maddyS
  */
 #include <stdio.h>
 #include <stdlib.h>
